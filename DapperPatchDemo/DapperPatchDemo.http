@@ -1,0 +1,6 @@
+@DapperPatchDemo_HostAddress = http://localhost:5058
+
+GET {{DapperPatchDemo_HostAddress}}/api/users
+Accept: application/json
+
+###
