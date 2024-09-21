@@ -103,7 +103,7 @@ namespace DapperPatchExample.Controllers
                     return NotFound();
                 }
 
-                patchDoc.ApplyTo(user, error =>
+                patchDoc.ApplyTo(user,  error =>
                 {
                     ModelState.AddModelError(error.Operation.path, error.ErrorMessage);
                 });

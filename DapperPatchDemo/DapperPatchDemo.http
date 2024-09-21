@@ -4,3 +4,12 @@ GET {{DapperPatchDemo_HostAddress}}/api/users
 Accept: application/json
 
 ###
+PATCH {{DapperPatchDemo_HostAddress}}/api/users/1
+Content-Type: application/json-patch+json
+Accept: application/json
+
+[
+    { "op": "replace", "path": "/name", "value": "newname" },
+    { "op": "replace", "path": "/address" ,"value": null }
+]
+
